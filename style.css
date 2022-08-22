@@ -1,9 +1,12 @@
+body {
+    background-color: #eef9bf;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #eef9bf;
 }
 
 .title {
@@ -41,6 +44,21 @@
     border: 1px solid #99cea8;
     border-radius: 5px;
     margin: 34px;
+    transition: all 1s;
+}
+
+.front-face {
+    background-image: url(./front2.png);
+}
+
+.front-face img {
+    display: none;
+}
+
+.turned {
+    transform: rotatey(180deg);
+    background-color: red;
+    transition: all 1s;
 }
 
 @media (max-width: 576px) {
